@@ -84,7 +84,7 @@ Below is the code for Day#1 challenge in Javascript 30.
         <audio data-key="70" src="file:///C:/Users/USER/Downloads/Crunchy-Punch-B-www.fesliyanstudios.com.mp3"></audio>
         <script>
         
-function addTeenas(e) 
+            function addTeenas(e) 
             {
                 const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
                 const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
