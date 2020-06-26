@@ -1,6 +1,6 @@
 # JavaScript
-This is for JavaScript 30 days challenge 
-Below is the code for Day#1 challenge in Javascript 30
+This is part of JavaScript 30 days challenge. 
+Below is the code for Day#1 challenge in Javascript 30.
 
     <!DOCTYPE HTML>
     <html>
