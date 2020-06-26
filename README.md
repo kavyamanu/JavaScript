@@ -83,20 +83,24 @@ Below is the code for Day#1 challenge in Javascript 30.
         <audio data-key="68" src="file:///C:/Users/USER/Downloads/Explosion+1.mp3"></audio>
         <audio data-key="70" src="file:///C:/Users/USER/Downloads/Crunchy-Punch-B-www.fesliyanstudios.com.mp3"></audio>
         <script>
-            window.addEventListener('keydown', function(e) {
+        
+function addTeenas(e) 
+            {
                 const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
                 const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
                 if(!audio) return;
                 audio.currentTime=0;
                 audio.play();
                 key.classList.add("playing");
-            });
+            }
             function removerTernas(e)
             {
                 if (e.propertyName !== 'transform') return;
                 this.classList.remove("playing");
             }
+            window.addEventListener('keydown', addTeenas);
             const keys = document.querySelectorAll('.key');
+            keys.forEach(key => key.addEventListener('transitionend', removerTernas));
             keys.forEach(key => key.addEventListener('transitionend', removerTernas));
          </script>
     </body>
